@@ -10,7 +10,6 @@ class Employee:
         for contractType in contracts:
             self.contracts.append(contractType)
 
-        print(self)
 
     def get_pay(self):
         totalPay = 0
@@ -26,7 +25,7 @@ class Employee:
                 payString += " and receives a "
 
 
-        payString += f". Their total pay is {self.get_pay()}."
+        payString += f".  Their total pay is {self.get_pay()}."
         return payString
 
 

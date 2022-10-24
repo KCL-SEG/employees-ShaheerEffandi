@@ -33,7 +33,7 @@ class CommissionContract(Contract):
         self.numberOfCommissions = numberOfCommissions
 
     def __str__ (self):
-        return f"commission for {self.numberOfCommissions} at {self.commisionRate}/contract"
+        return f"commission for {self.numberOfCommissions} contract(s) at {self.commisionRate}/contract"
 
     def getPay(self):
         return self.commisionRate * self.numberOfCommissions
@@ -43,7 +43,7 @@ class BonusContract(Contract):
         self.bonus = bonus
 
     def __str__ (self):
-        return f"bonus commision of {self.bonus}"
+        return f"bonus commission of {self.bonus}"
 
     def getPay(self):
         return self.bonus
